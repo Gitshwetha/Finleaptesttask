@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Finleap Application Test Automation Test Suite" duration-ms="34475" started-at="2020-01-20T21:07:47Z" finished-at="2020-01-20T21:08:21Z">
+    <groups>
+    </groups>
+    <test name="Finleap Web Test Cases" duration-ms="34475" started-at="2020-01-20T21:07:47Z" finished-at="2020-01-20T21:08:21Z">
+      <class name="com.fin.qa.testcases.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fin.qa.testcases.LoginTest@380fb434]" name="setUp" is-config="true" duration-ms="8506" started-at="2020-01-21T02:37:58Z" finished-at="2020-01-21T02:38:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validloginTest(java.lang.String, java.lang.String)[pri:0, instance:com.fin.qa.testcases.LoginTest@380fb434]" name="validloginTest" duration-ms="2287" started-at="2020-01-21T02:38:07Z" data-provider="getFINTestData" finished-at="2020-01-21T02:38:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[superman@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P@ssword1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validloginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fin.qa.testcases.LoginTest@380fb434]" name="tearDown" is-config="true" duration-ms="108" started-at="2020-01-21T02:38:09Z" finished-at="2020-01-21T02:38:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fin.qa.testcases.LoginTest@380fb434]" name="setUp" is-config="true" duration-ms="8170" started-at="2020-01-21T02:38:09Z" finished-at="2020-01-21T02:38:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidloginTest(java.lang.String, java.lang.String)[pri:0, instance:com.fin.qa.testcases.LoginTest@380fb434]" name="invalidloginTest" duration-ms="3604" started-at="2020-01-21T02:38:18Z" data-provider="getFINinTestData" finished-at="2020-01-21T02:38:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[super@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidloginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fin.qa.testcases.LoginTest@380fb434]" name="tearDown" is-config="true" duration-ms="111" started-at="2020-01-21T02:38:21Z" finished-at="2020-01-21T02:38:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.fin.qa.testcases.LoginTest -->
+      <class name="com.fin.qa.testcases.SignupPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fin.qa.testcases.SignupPageTest@3b81a1bc]" name="setUp" is-config="true" duration-ms="9551" started-at="2020-01-21T02:37:47Z" finished-at="2020-01-21T02:37:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="signupTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.fin.qa.testcases.SignupPageTest@3b81a1bc]" name="signupTest" duration-ms="1434" started-at="2020-01-21T02:37:57Z" data-provider="getFINTestData" finished-at="2020-01-21T02:37:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shwetha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[superman@grr.la]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[P@ssword1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fin.qa.testcases.SignupPageTest@3b81a1bc]" name="tearDown" is-config="true" duration-ms="103" started-at="2020-01-21T02:37:58Z" finished-at="2020-01-21T02:37:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.fin.qa.testcases.SignupPageTest -->
+    </test> <!-- Finleap Web Test Cases -->
+  </suite> <!-- Finleap Application Test Automation Test Suite -->
+</testng-results>

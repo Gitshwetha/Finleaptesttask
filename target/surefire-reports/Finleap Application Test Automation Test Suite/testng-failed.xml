@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Finleap Application Test Automation Test Suite]">
+  <test name="Finleap Web Test Cases(failed)">
+    <classes>
+      <class name="com.fin.qa.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.fin.qa.testcases.LoginTest -->
+      <class name="com.fin.qa.testcases.SignupPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="signupTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.fin.qa.testcases.SignupPageTest -->
+    </classes>
+  </test> <!-- Finleap Web Test Cases(failed) -->
+</suite> <!-- Failed suite [Finleap Application Test Automation Test Suite] -->
