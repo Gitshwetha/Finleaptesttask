@@ -18,7 +18,10 @@ public class SignupPageTest extends TestBase{
 	public SignupPageTest(){
 		super();
 	}
-
+	//test cases should be separated -- independent with each other
+		//before each test case -- launch the browser 
+		//@test -- execute test case to Sign up into Finleap application
+		//after each test case -- close the browser
 	@BeforeMethod
 	public void setUp(){
 		initialization();
