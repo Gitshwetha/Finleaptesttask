@@ -1,8 +1,8 @@
-# maven-testNG 
+# maven-Selenium testNG 
 
 This is a maven project built using TestNG framework and Selenium-webdriver with data driven framework format.
 This project  follows PageObjectModel structure
-
+All dependencies available in pom.xml and testng.xml has the details of the class to be executed.
 To run testcases:
 Clone the repository and import in Eclipse.
 
