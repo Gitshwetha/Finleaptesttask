@@ -1,5 +1,6 @@
 package com.fin.qa.testcases;
 
+import org.junit.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -19,9 +20,9 @@ public class SignupPageTest extends TestBase{
 		super();
 	}
 	//test cases should be separated -- independent with each other
-		//before each test case -- launch the browser 
-		//@test -- execute test case to Sign up into Finleap application
-		//after each test case -- close the browser
+	//before each test case -- launch the browser 
+	//@test -- execute test case to Sign up into Finleap application
+	//after each test case -- close the browser
 	@BeforeMethod
 	public void setUp(){
 		initialization();
@@ -35,8 +36,14 @@ public class SignupPageTest extends TestBase{
 	}
 
 	@Test(priority=1, dataProvider="getFINTestData")
-	public void signupTest(String fname, String lname, String email, String pword) throws InterruptedException{
+	public void signupTest(String fname, String lname, String email, String pword) {
 		signupPage.signup(fname,lname,email,pword);
+
+	}
+	@Test(priority=2, dataProvider="getFINTestData")
+	public void emailAlreadypresent(String fname, String lname, String email, String pword) {
+		signupPage.signup(fname,lname,email,pword);
+		Assert.assertEquals(signupPage.duplicateEmail(), prop.getProperty("emaildup"));
 
 	}
 

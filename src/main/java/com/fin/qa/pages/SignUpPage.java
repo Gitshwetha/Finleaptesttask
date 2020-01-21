@@ -19,7 +19,6 @@ public class SignUpPage extends TestBase{
 	@FindBy(id="lastName")
 	WebElement lastname;
 
-
 	@FindBy(id="email")
 	WebElement email;
 
@@ -32,6 +31,8 @@ public class SignUpPage extends TestBase{
 	@FindBy(id="kc-submit")
 	WebElement submit;
 
+	@FindBy(className="notification-text")
+	WebElement emaildup;
 
 	//Initializing the Page Objects:
 	public SignUpPage(){
@@ -48,10 +49,8 @@ public class SignUpPage extends TestBase{
 		consent.click();
 		submit.click();
 	}
-	public boolean signupwithoutVal() {
-		signup.click();
-		Assert.assertFalse(submit.isEnabled());
-		return true;
+	public String duplicateEmail() {
+		return emaildup.getText();
 
 	}
 }
