@@ -30,6 +30,9 @@ public class SignUpPage extends TestBase{
 
 	@FindBy(id="kc-submit")
 	WebElement submit;
+	
+	@FindBy(xpath="//div/div[1]/div/div/div/div[1]/p/span")
+	WebElement msg;
 
 	@FindBy(className="notification-text")
 	WebElement emaildup;
@@ -49,6 +52,12 @@ public class SignUpPage extends TestBase{
 		consent.click();
 		submit.click();
 	}
+	public String signedup() {
+		
+		return msg.getText();
+		
+	}
+	
 	public String duplicateEmail() {
 		return emaildup.getText();
 

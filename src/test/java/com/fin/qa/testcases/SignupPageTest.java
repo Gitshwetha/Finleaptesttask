@@ -38,6 +38,8 @@ public class SignupPageTest extends TestBase{
 	@Test(priority=1, dataProvider="getFINTestData")
 	public void signupTest(String fname, String lname, String email, String pword) {
 		signupPage.signup(fname,lname,email,pword);
+		Assert.assertEquals(signupPage.signedup(), prop.getProperty("success"));
+		
 
 	}
 	@Test(priority=2, dataProvider="getFINTestData")
